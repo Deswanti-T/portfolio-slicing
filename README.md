@@ -2,7 +2,7 @@
 
 Website portofolio pribadi satu halaman yang responsif, dibuat dengan HTML, CSS murni, dan JavaScript (DOM) tanpa framework CSS.
 
-**Live demo:** https://GANTI-DENGAN-LINK-DEPLOY
+**Live demo:** https://deswanti-t.github.io/portfolio-slicing/
 
 ## Screenshot
 
