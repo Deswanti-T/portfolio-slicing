@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deswanti Tampubolon | Portofolio</title>
+  <meta name="description" content="Portofolio Deswanti Tampubolon, mahasiswa Teknologi Informasi Universitas Jember yang menyukai desain dan menulis puisi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a href="#beranda" class="logo">Deswanti T.</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Ganti tema gelap atau terang">🌙</button>
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="beranda">
+      <p class="hero-hello">Halo, saya <strong>Deswanti Tampubolon</strong></p>
+      <h1>Mahasiswa Teknologi Informasi yang suka merangkai kata dan Puisi.</h1>
+      <p class="hero-text">Saya belajar membangun website dan merancang desain, sambil terus menulis puisi. Portofolio ini adalah langkah awal saya.</p>
+      <div class="hero-cta">
+        <a href="#proyek" class="btn btn-primary">Lihat proyek</a>
+        <a href="#kontak" class="btn btn-ghost">Hubungi saya</a>
+      </div>
+      <p class="hero-typing">Sedang saya pelajari: <span id="typing"></span><span class="cursor">|</span></p>
+    </section>
+
+    <section class="section container" id="tentang">
+      <h2>Tentang saya</h2>
+      <div class="about">
+        <p>Saya mahasiswa Teknologi Informasi semester 3 di Universitas Jember. Saya lulusan SMA Swasta RK Bintang Timur Pematangsiantar dan diterima di Universitas Jember lewat jalur SNBP.</p>
+        <p>Dunia teknologi masih sangat baru bagi saya, tetapi justru itu yang membuat saya semangat belajar. Di luar kuliah, saya berminat di bidang kepenulisan dan suka membuat puisi.</p>
+        <p>Cita-cita saya adalah menjadi lulusan yang bekerja sesuai jurusan, dan terus mengembangkan kemampuan di bidang ini.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="keahlian">
+      <h2>Keahlian</h2>
+      <ul class="skills">
+        <li class="skill">
+          <div class="skill-head"><span>Figma dan desain</span><span>55%</span></div>
+          <div class="bar"><div class="bar-fill" data-level="55"></div></div>
+        </li>
+        <li class="skill">
+          <div class="skill-head"><span>Menulis kreatif (puisi)</span><span>80%</span></div>
+          <div class="bar"><div class="bar-fill" data-level="80"></div></div>
+        </li>
+        <li class="skill">
+          <div class="skill-head"><span>HTML dan CSS</span><span>30%</span></div>
+          <div class="bar"><div class="bar-fill" data-level="30"></div></div>
+        </li>
+        <li class="skill">
+          <div class="skill-head"><span>JavaScript</span><span>10%</span></div>
+          <div class="bar"><div class="bar-fill" data-level="10"></div></div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section container" id="proyek">
+      <h2>Proyek</h2>
+      <div class="filters" role="group" aria-label="Filter proyek">
+        <button class="filter active" data-filter="all">Semua</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="ui">Desain UI</button>
+      </div>
+      <div class="projects">
+        <article class="card" data-category="ui">
+          <div class="card-thumb t1"></div>
+          <h3>Desain Aplikasi Puisi</h3>
+          <p>Rancangan tampilan aplikasi untuk menulis, menyimpan, dan membaca puisi.</p>
+          <span class="tag">Figma</span>
+        </article>
+        <article class="card" data-category="web">
+          <div class="card-thumb t3"></div>
+          <h3>Portofolio Pribadi</h3>
+          <p>Website yang sedang Anda lihat, dibuat responsif tanpa framework CSS.</p>
+          <span class="tag">HTML, CSS, JavaScript</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="kontak">
+      <h2>Kontak</h2>
+      <ul class="contact-links">
+        <li><a href="https://www.linkedin.com/in/deswanti-tampubolon-311962340" target="_blank" rel="noopener">LinkedIn: Deswanti Tampubolon</a></li>
+        <li><a href="https://www.instagram.com/deswanti_tpbln" target="_blank" rel="noopener">Instagram: @deswanti_tpbln</a></li>
+      </ul>
+      <form class="form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" autocomplete="name">
+          <small class="error" id="namaError"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email">
+          <small class="error" id="emailError"></small>
+        </div>
+        <div class="field">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4"></textarea>
+          <small class="error" id="pesanError"></small>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim pesan</button>
+        <p class="success" id="formSuccess" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Deswanti Tampubolon. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
